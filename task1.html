@@ -1,60 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Show 12 Files</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            color: white;
+            background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video, .audio {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .video:hover, .audio:hover {
+            transform: scale(1.05);
+        }
+
+        iframe, audio {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        audio {
+            height: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            padding-left: 20px;
+        }
+    </style>
+    <title>Media Player</title>
 </head>
-
 <body>
-  <h1>Showing six Video's and six Audio's Files</h1>
+    <h1>Audio & Vedio Files</h1>
+    <h2>Vedio Files</h2>
+    <div class="container">
+        <div class="video" controls>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M3_pLsDdeuU?si=VyUAp18ydZQSlcB8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3oI-34aPMWM?si=VkhHmxnSYrU1PFvV" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-  <h2>Audio Files</h2>
-  <ol>
-    <!-- Audio Files -->
-    <li>
-      <audio id="audio1" controls><source src="1.mp3" type="audio/mp3"></audio>
-    </li>
-    <li>
-      <audio id="audio2" controls><source src="2.mp3" type="audio/mp3"></audio>
-    </li>
-    <li>
-      <audio id="audio3" controls><source src="3.mp3" type="audio/mp3"></audio>
-    </li>
-    <li>
-      <audio id="audio4" controls><source src="4.mp3" type="audio/mp3"></audio>
-    </li>
-    <li>
-      <audio id="audio5" controls><source src="5.mp3" type="audio/mp3"></audio>
-    </li>
-    <li>
-      <audio id="audio6" controls><source src="6.mp3" type="audio/mp3"></audio>
-    </li>
-  </ol>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OsNklbh9gYI?si=ZQAQNCkcmU7rGZwk" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lea-Wl_uWXY?si=LwAncPna0o9_1-eK" frameborder="0" allowfullscreen></iframe>
+        </div>
 
-  <h2>Video Files</h2>
-  <ol>
-    <!-- Video Files -->
-    <li>
-      <video id="video1" width="320" height="240" controls><source src="1.mp4" type="video/mp4"></video>
-    </li>
-    <li>
-      <video id="video2" width="320" height="240" controls><source src="2.mp4" type="video/mp4"></video>
-    </li>
-    <li>
-      <video id="video3" width="320" height="240" controls><source src="3.mp4" type="video/mp4"></video>
-    </li>
-    <li>
-      <video id="video4" width="320" height="240" controls><source src="4.mp4" type="video/mp4"></video>
-    </li>
-    <li>
-      <video id="video5" width="320" height="240" controls><source src="5.mp4" type="video/mp4"></video>
-    </li>
-    <li>
-      <video id="video6" width="320" height="240" controls><source src="6.mp4" type="video/mp4"></video>
-    </li>
-  </ol>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-tgVpUgsQ5k?si=krlyrDwqdHZLJEpW" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qzf1a--rhp8?si=pfdZa63b8RmYzyvQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    <h2>Audio Files</h2>
+    <div class="container">
+       
+        <div class="audio">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="audio">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        
+
+        <div class="audio">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="audio">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="audio">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="audio">
+            <audio controls>
+                <source src="audio/1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
 </body>
-
 </html>
