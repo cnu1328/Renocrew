@@ -1,0 +1,91 @@
+:root {
+    --navbar-bg-color: #3498db; 
+    --section1-color: #e74c3c; 
+    --section2-color: #2ecc71; 
+    --section3-color: #f39c12; 
+    --section4-color: #9b59b6; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navbar-bg-color);
+    padding: 10px;
+}
+
+.navbar img {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+
+}
+
+.section {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #34495e; 
+}
+
+
+.section1 { 
+    background-color: var(--section1-color); 
+}
+.section2 { 
+    background-color: var(--section2-color); 
+}
+.section3 { 
+    background-color: var(--section3-color); 
+}
+.section4 { 
+    background-color: var(--section4-color); 
+}
+
+h1 {
+    text-align: center;
+}
+
+.quote {
+    background-color: rgb(221, 183, 87);
+}
+
+@media screen and (max-width: 566px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar img {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 210px) {
+    .navbar img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 190px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
