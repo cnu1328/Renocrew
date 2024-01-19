@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.card {
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+}
+
+.tags span {
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #555;
+    border: 1px solid #333;
+    background-color: transparent;
+}
+
+.title h1{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.read-more {
+    display: block;
+    width: 30;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
